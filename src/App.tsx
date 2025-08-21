@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
 import ThemeToggle from './components/ThemeToggle/ThemeToggle'
+import profileImage from './assets/images/profile.jpg'
 
 function App() {
   const skills = [
@@ -31,7 +32,7 @@ function App() {
       <Header 
         name="Abed-Elraouf Abboud"
         title="Full-Stack Developer"
-        profileImage="/src/assets/images/profile.jpg"
+        profileImage={profileImage}
         cvUrl="/assets/abedcv.pdf"
       />
       <About 
