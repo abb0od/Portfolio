@@ -1,7 +1,12 @@
 .themeToggle {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  
+  @media (min-width: 640px) {
+    top: 1rem;
+    right: 1rem;
+  }
   padding: 0.5rem;
   border-radius: 9999px;
   cursor: pointer;

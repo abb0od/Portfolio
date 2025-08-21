@@ -1,18 +1,124 @@
 .header {
   background-color: var(--background-primary);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md);
   box-shadow: var(--card-shadow);
+  position: relative;
+  z-index: 10;
 }
 
-.header-title {
-  font-size: var(--heading-1-size);
+@media (min-width: 640px) {
+  .header {
+    padding: var(--spacing-xl);
+  }
+}
+
+.headerContainer {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.profileImage {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 640px) {
+  .profileImage {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+  border-color: var(--accent-color);
+}
+
+.infoContainer {
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+.headerTitle {
+  font-size: var(--heading-2-size);
   color: var(--heading-text);
   font-weight: bold;
 }
 
-.header-subtitle {
-  font-size: var(--heading-3-size);
+@media (min-width: 640px) {
+  .headerTitle {
+    font-size: var(--heading-1-size);
+  }
+}
+
+.headerSubtitle {
+  font-size: var(--text-base-size);
   color: var(--secondary-text);
+}
+
+@media (min-width: 640px) {
+  .headerSubtitle {
+    font-size: var(--heading-3-size);
+  }
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  margin-top: var(--spacing-sm);
+}
+
+@media (min-width: 768px) {
+  .downloadButton {
+    margin-top: 0;
+  }
+}
+
+.downloadButton:hover {
+  filter: brightness(110%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
 }
 
  
