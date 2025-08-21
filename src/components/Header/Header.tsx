@@ -9,6 +9,7 @@ interface HeaderProps {
 
 const Header = ({ name, title, profileImage, cvUrl }: HeaderProps) => {
   return (
+     <div className="pt-6">
     <header className={styles.header}>
       <div className={styles.headerContainer}>
         <div className={styles.profileSection}>
@@ -45,6 +46,7 @@ const Header = ({ name, title, profileImage, cvUrl }: HeaderProps) => {
         </a>
       </div>
     </header>
+    </div>
   );
 };
 
