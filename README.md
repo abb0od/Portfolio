@@ -90,13 +90,3 @@ my-portfolio/
 3. Add your CV in `public/assets/`
 4. Modify skills and projects data in `App.tsx`
 5. Update social links in the Footer component
-
-## 🔧 Future Improvements
-
-- [ ] Add dark mode support
-- [ ] Implement blog section
-- [ ] Add project filtering
-- [ ] Integrate contact form
-- [ ] Add animations on scroll
-
-

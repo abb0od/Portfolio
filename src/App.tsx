@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Footer from './components/Footer/Footer'
+import ThemeToggle from './components/ThemeToggle/ThemeToggle'
 
 function App() {
   const skills = [
@@ -25,7 +26,8 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div className="min-h-screen">
+      <ThemeToggle />
       <Header 
         name="Abed-Elraouf Abboud"
         title="Full-Stack Developer"
