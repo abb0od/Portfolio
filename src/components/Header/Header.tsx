@@ -1,3 +1,5 @@
+import styles from './Header.module.css';
+
 interface HeaderProps {
   name: string;
   title: string;
@@ -7,7 +9,7 @@ interface HeaderProps {
 
 const Header = ({ name, title, profileImage, cvUrl }: HeaderProps) => {
   return (
-    <header className="p-6 bg-white shadow-md">
+    <header className={styles.header}>
       <div className="max-w-7xl mx-auto flex justify-between items-start">
         <div className="flex items-center gap-6">
           <div className="shrink-0 relative group">
@@ -19,8 +21,8 @@ const Header = ({ name, title, profileImage, cvUrl }: HeaderProps) => {
             <div className="absolute inset-0 rounded-full transition-opacity duration-300 opacity-0 bg-black/10"></div>
           </div>
           <div>
-            <h1 className="text-3xl font-bold">{name}</h1>
-            <p className="text-lg text-gray-600">{title}</p>
+            <h1 className={styles.headerTitle}>{name}</h1>
+            <p className={styles.headerSubtitle}>{title}</p>
           </div>
         </div>
         

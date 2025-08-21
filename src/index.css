@@ -1,1 +1,28 @@
 @import "tailwindcss";
+@import "./styles/theme.css";
+
+/* Global styles using CSS variables */
+body {
+  color: var(--primary-text);
+  background-color: var(--background-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-size: var(--heading-1-size);
+  color: var(--heading-text);
+}
+
+h2 {
+  font-size: var(--heading-2-size);
+  color: var(--heading-text);
+}
+
+h3 {
+  font-size: var(--heading-3-size);
+  color: var(--heading-text);
+}
+
+p {
+  color: var(--secondary-text);
+}

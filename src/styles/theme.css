@@ -1,0 +1,57 @@
+:root {
+  /* Colors - Light Theme */
+  --primary-text: #111827;
+  --secondary-text: #4B5563;
+  --heading-text: #111827;
+  --background-primary: #ffffff;
+  --background-secondary: #F3F4F6;
+  --accent-color: #3B82F6;
+  --border-color: #E5E7EB;
+  --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  --card-background: #FFFFFF;
+
+  /* Colors - Dark Theme */
+  --dark-primary-text: #F9FAFB;
+  --dark-secondary-text: #D1D5DB;
+  --dark-heading-text: #FFFFFF;
+  --dark-background-primary: #1F2937;
+  --dark-background-secondary: #111827;
+  --dark-accent-color: #60A5FA;
+  --dark-border-color: #374151;
+  --dark-card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.5);
+  --dark-card-background: #1F2937;
+
+  /* Typography */
+  --heading-1-size: 2rem;
+  --heading-2-size: 1.5rem;
+  --heading-3-size: 1.25rem;
+  --text-base-size: 1rem;
+  --text-sm-size: 0.875rem;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Container Sizes */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+
+  
+}
+
+/* Dark mode overrides */
+:root[class~="dark"] {
+  --primary-text: var(--dark-primary-text);
+  --secondary-text: var(--dark-secondary-text);
+  --heading-text: var(--dark-heading-text);
+  --background-primary: var(--dark-background-primary);
+  --background-secondary: var(--dark-background-secondary);
+  --accent-color: var(--dark-accent-color);
+  --border-color: var(--dark-border-color);
+  --card-shadow: var(--dark-card-shadow);
+  --card-background: var(--dark-card-background);
+}

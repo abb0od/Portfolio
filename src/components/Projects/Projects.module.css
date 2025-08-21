@@ -1,0 +1,36 @@
+.projectsSection {
+  padding: var(--spacing-xl);
+  max-width: var(--container-xl);
+  margin: 0 auto;
+}
+
+.projectsTitle {
+  font-size: var(--heading-2-size);
+  color: var(--heading-text);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.projectCard {
+  padding: var(--spacing-lg);
+  background-color: var(--card-background);
+  border-radius: 0.75rem;
+  box-shadow: var(--card-shadow);
+}
+
+.projectTitle {
+  font-size: var(--heading-3-size);
+  color: var(--heading-text);
+  font-weight: 600;
+}
+
+.projectDescription {
+  color: var(--secondary-text);
+  margin-top: var(--spacing-sm);
+}
